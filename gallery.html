@@ -133,73 +133,89 @@
 </style>
 
 
-    <!-- Events Gallery Section -->
-<section class="events-gallery-section section-padding" id="section_7">
-    <div class="container">
-        <h2 class="text-center mb-5">Event Gallery</h2>
-        <div class="row">
-            <!-- Event 1 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card shadow-lg rounded">
-                    <img src="images/charity/pic2.jpg" class="card-img-top img-medium" alt="Event Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Scholarship Fundraising Gala</h5>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Event 2 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card shadow-lg rounded">
-                    <img src="images/charity/pic3.jpg" class="card-img-top img-medium" alt="Event Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Community Outreach Program</h5>
-                    </div>
-                </div>
-            </div>
+<style>
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery-item {
+        margin: 10px;
+        text-align: center;
+    }
+    .gallery-item img {
+        width: 300px; /* Adjust width as needed */
+        height: 200px; /* Adjust height */
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .marquee {
+        width: 100%;
+        background-color: #203864;
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<!-- <marquee class="marquee">Welcome to the Tanga University Foundation Gallery - Celebrating Milestones and Achievements</marquee> -->
 
-            <!-- Event 3 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card shadow-lg rounded">
-                    <img src="images/charity/pic7.jpg" class="card-img-top img-medium" alt="Event Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Annual Charity Run</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Event 4 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card shadow-lg rounded">
-                    <img src="images/charity/pic1.jpg" class="card-img-top img-medium" alt="Event Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Food Distribution Drive</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Event 5 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card shadow-lg rounded">
-                    <img src="images/charity/pic5.jpg" class="card-img-top img-medium" alt="Event Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Charity Concert</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Event 6 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card shadow-lg rounded">
-                    <img src="images/charity/pic6.jpg" class="card-img-top img-medium" alt="Event Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Volunteer Appreciation Ceremony</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="images/charity/pic1.jpg" alt="Foundation Event">
+        <p>Foundation Event</p>
     </div>
-</section>
+    <div class="gallery-item">
+        <img src="images/charity/pic2.jpg" alt="Community Outreach">
+        <p>Community Outreach</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic3.jpg" alt="Educational Program">
+        <p>Educational Program</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic5.jpg" alt="Student Support">
+        <p>Student Support</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic6.jpg" alt="Research Collaboration">
+        <p>Research Collaboration</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic6.jpg" alt="Research Collaboration">
+        <p>Research Collaboration</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic1.jpg" alt="Foundation Event">
+        <p>Foundation Event</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic2.jpg" alt="Community Outreach">
+        <p>Community Outreach</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic3.jpg" alt="Educational Program">
+        <p>Educational Program</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic5.jpg" alt="Student Support">
+        <p>Student Support</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic3.jpg" alt="Educational Program">
+        <p>Educational Program</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/charity/pic6.jpg" alt="Research Collaboration">
+        <p>Research Collaboration</p>
+    </div>
+</div>
 <style>
     /* Custom CSS to adjust the image size */
 .img-medium {
@@ -224,7 +240,7 @@
                 <h5 class="text-uppercase fw-bold">Quick Links</h5>
                 <ul class="list-unstyled">
                     <li><a href="index.html" class="text-white">Home</a></li>
-                    <li><a href="#section_2" class="text-white">About</a></li>
+                    <li><a href="about.html" class="text-white">About</a></li>
                     <li><a href="#section_3" class="text-white">Causes</a></li>
                     <li><a href="#section_6" class="text-white">Contact</a></li>
                 </ul>
@@ -233,7 +249,7 @@
             <!-- Contact Info -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-uppercase fw-bold">Contact Info</h5>
-                <p class="text-white"><i class="bi-geo-alt me-2"></i> P.O Box 45, Tanga, Tanzania</p>
+                <p class="text-white"><i class="bi-geo-alt me-2"></i> Tanga, Tanzania</p>
                 <p class="text-white"><i class="bi-envelope me-2"></i> <a href="mailto:info@tangaunifoundation.ac.tz" class="text-white">info@tangaunifoundation.ac.tz</a></p>
                 <p class="text-white"><i class="bi-telephone me-2"></i> <a href="tel:+255123456789" class="text-white">+255 123 456 789</a></p>
             </div>
