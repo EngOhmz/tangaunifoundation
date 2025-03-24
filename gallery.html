@@ -167,56 +167,50 @@
 <body>
 <!-- <marquee class="marquee">Welcome to the Tanga University Foundation Gallery - Celebrating Milestones and Achievements</marquee> -->
 
+<!-- Lightbox Container -->
+<div id="lightbox" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img id="lightbox-img" src="" alt="Enlarged Image">
+</div>
+
 <div class="gallery-container">
     <div class="gallery-item">
-        <img src="images/charity/pic1.jpg" alt="Foundation Event">
+        <a href="#lightbox" onclick="openLightbox('images/charity/pic1.jpg')">
+            <img src="images/charity/pic1.jpg" alt="Foundation Event">
+        </a>
         <p>Foundation Event</p>
     </div>
     <div class="gallery-item">
-        <img src="images/charity/pic2.jpg" alt="Community Outreach">
+        <a href="#lightbox" onclick="openLightbox('images/charity/pic2.jpg')">
+            <img src="images/charity/pic2.jpg" alt="Community Outreach">
+        </a>
         <p>Community Outreach</p>
     </div>
     <div class="gallery-item">
-        <img src="images/charity/pic3.jpg" alt="Educational Program">
+        <a href="#lightbox" onclick="openLightbox('images/charity/pic3.jpg')">
+            <img src="images/charity/pic3.jpg" alt="Educational Program">
+        </a>
         <p>Educational Program</p>
     </div>
     <div class="gallery-item">
-        <img src="images/charity/pic5.jpg" alt="Student Support">
+        <a href="#lightbox" onclick="openLightbox('images/charity/pic5.jpg')">
+            <img src="images/charity/pic5.jpg" alt="Student Support">
+        </a>
         <p>Student Support</p>
     </div>
     <div class="gallery-item">
-        <img src="images/charity/pic6.jpg" alt="Research Collaboration">
-        <p>Research Collaboration</p>
-    </div>
-    <div class="gallery-item">
-        <img src="images/charity/pic6.jpg" alt="Research Collaboration">
-        <p>Research Collaboration</p>
-    </div>
-    <div class="gallery-item">
-        <img src="images/charity/pic1.jpg" alt="Foundation Event">
-        <p>Foundation Event</p>
-    </div>
-    <div class="gallery-item">
-        <img src="images/charity/pic2.jpg" alt="Community Outreach">
-        <p>Community Outreach</p>
-    </div>
-    <div class="gallery-item">
-        <img src="images/charity/pic3.jpg" alt="Educational Program">
-        <p>Educational Program</p>
-    </div>
-    <div class="gallery-item">
-        <img src="images/charity/pic5.jpg" alt="Student Support">
-        <p>Student Support</p>
-    </div>
-    <div class="gallery-item">
-        <img src="images/charity/pic3.jpg" alt="Educational Program">
-        <p>Educational Program</p>
-    </div>
-    <div class="gallery-item">
-        <img src="images/charity/pic6.jpg" alt="Research Collaboration">
+        <a href="#lightbox" onclick="openLightbox('images/charity/pic6.jpg')">
+            <img src="images/charity/pic6.jpg" alt="Research Collaboration">
+        </a>
         <p>Research Collaboration</p>
     </div>
 </div>
+
+<script>
+    function openLightbox(imageSrc) {
+        document.getElementById('lightbox-img').src = imageSrc;
+    }
+</script>
 <style>
     /* Custom CSS to adjust the image size */
 .img-medium {
